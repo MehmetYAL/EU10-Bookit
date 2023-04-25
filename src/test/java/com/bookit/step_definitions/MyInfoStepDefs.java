@@ -2,6 +2,7 @@ package com.bookit.step_definitions;
 
 import com.bookit.pages.SelfPage;
 import com.bookit.pages.SignInPage;
+import com.bookit.utilities.BookItApiUtil;
 import com.bookit.utilities.BrowserUtils;
 import com.bookit.utilities.Driver;
 import com.bookit.utilities.Environment;
@@ -32,7 +33,7 @@ public class MyInfoStepDefs {
     }
 
 
-    /*@Given("I get env properties")
+    @Given("I get env properties")
     public void iGetEnvProperties() {
 
         System.out.println(Environment.URL);
@@ -49,5 +50,5 @@ public class MyInfoStepDefs {
         BookItApiUtil.getTokenByRole("student-leader");
 
 
-    }*/
+    }
 }

@@ -33,7 +33,7 @@ public class ApiStepDefs {
         System.out.println("token = " + token);
         //send a GET request "/api/users/me" endpoint to get current user info
     response=    given().contentType(ContentType.JSON)
-                .and().header("Authorzation",token)
+                .and().header("Authorization",token)
                 .get(ConfigurationReader.get("base_url")+"/api/users/me");
     }
 
